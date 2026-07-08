@@ -1,0 +1,44 @@
+--- HOSPITALS TABLE ---
+{"id":1,"hospital_name":"Apollo","address":"Navi Mumbai, Maharashtra","phone":"+91-22-2826-7878","latitude":null,"longitude":null}
+{"id":2,"hospital_name":"Apollo Hospital","address":"Bandra, Mumbai, Maharashtra","phone":"+91-22-2826-7878","latitude":null,"longitude":null}
+{"id":3,"hospital_name":"Max Healthcare","address":"Saket, New Delhi","phone":"+91-11-4141-4141","latitude":null,"longitude":null}
+{"id":4,"hospital_name":"Fortis Healthcare","address":"Vasant Kunj, New Delhi","phone":"+91-11-4141-1000","latitude":null,"longitude":null}
+{"id":5,"hospital_name":"Lilavati Hospital","address":"Bandra, Mumbai, Maharashtra","phone":"+91-22-6660-7777","latitude":null,"longitude":null}
+{"id":6,"hospital_name":"AIIMS Delhi","address":"Ansari Nagar, New Delhi","phone":"+91-11-2658-8500","latitude":null,"longitude":null}
+{"id":7,"hospital_name":"Manipal Hospital","address":"Indiranagar, Bangalore, Karnataka","phone":"+91-80-6666-7777","latitude":null,"longitude":null}
+{"id":8,"hospital_name":"Kokilaben Hospital","address":"Versova, Mumbai, Maharashtra","phone":"+91-22-4217-4217","latitude":null,"longitude":null}
+{"id":9,"hospital_name":"Sir Ganga Ram Hospital","address":"Rajendra Place, New Delhi","phone":"+91-11-4129-6000","latitude":null,"longitude":null}
+{"id":10,"hospital_name":"Jehangir Hospital","address":"Camp, Pune, Maharashtra","phone":"+91-20-2627-8000","latitude":null,"longitude":null}
+{"id":11,"hospital_name":"Narayana Health","address":"Whitefield, Bangalore, Karnataka","phone":"+91-80-7122-6666","latitude":null,"longitude":null}
+--- USERS TABLE (hospitals) ---
+{"id":37,"username":"Apollo","role":"hospital"}
+{"id":38,"username":"Apollo Hospital","role":"hospital"}
+{"id":39,"username":"Max Healthcare","role":"hospital"}
+{"id":40,"username":"Fortis Healthcare","role":"hospital"}
+{"id":41,"username":"Lilavati Hospital","role":"hospital"}
+{"id":42,"username":"AIIMS Delhi","role":"hospital"}
+{"id":43,"username":"Manipal Hospital","role":"hospital"}
+{"id":44,"username":"Kokilaben Hospital","role":"hospital"}
+{"id":45,"username":"Sir Ganga Ram Hospital","role":"hospital"}
+{"id":46,"username":"Jehangir Hospital","role":"hospital"}
+{"id":47,"username":"Narayana Health","role":"hospital"}
+--- DONORS SCHEMA ---
+{"Field":"id","Type":"int","Null":"NO","Key":"PRI","Default":null,"Extra":"auto_increment"}
+{"Field":"user_id","Type":"int","Null":"YES","Key":"MUL","Default":null,"Extra":""}
+{"Field":"organ_type","Type":"varchar(255)","Null":"YES","Key":"","Default":null,"Extra":""}
+{"Field":"blood_group","Type":"varchar(255)","Null":"YES","Key":"","Default":null,"Extra":""}
+{"Field":"hospital_id","Type":"int","Null":"YES","Key":"MUL","Default":null,"Extra":""}
+{"Field":"consent","Type":"tinyint(1)","Null":"YES","Key":"","Default":"1","Extra":""}
+{"Field":"status","Type":"enum('PENDING','VERIFIED','ALLOCATED')","Null":"YES","Key":"","Default":"PENDING","Extra":""}
+{"Field":"urgency","Type":"int","Null":"YES","Key":"","Default":"1","Extra":""}
+{"Field":"hla_type","Type":"varchar(100)","Null":"YES","Key":"","Default":null,"Extra":""}
+--- RECIPIENTS SCHEMA ---
+{"Field":"id","Type":"int","Null":"NO","Key":"PRI","Default":null,"Extra":"auto_increment"}
+{"Field":"user_id","Type":"int","Null":"YES","Key":"MUL","Default":null,"Extra":""}
+{"Field":"organ_required","Type":"varchar(255)","Null":"YES","Key":"","Default":null,"Extra":""}
+{"Field":"blood_group","Type":"varchar(255)","Null":"YES","Key":"","Default":null,"Extra":""}
+{"Field":"hospital_id","Type":"int","Null":"YES","Key":"MUL","Default":null,"Extra":""}
+{"Field":"status","Type":"enum('PENDING','VERIFIED','ALLOCATED')","Null":"YES","Key":"","Default":"PENDING","Extra":""}
+{"Field":"urgency","Type":"varchar(255)","Null":"YES","Key":"","Default":null,"Extra":""}
+{"Field":"hla_type","Type":"varchar(100)","Null":"YES","Key":"","Default":null,"Extra":""}
+{"Field":"created_at","Type":"timestamp","Null":"YES","Key":"","Default":"CURRENT_TIMESTAMP","Extra":"DEFAULT_GENERATED"}

@@ -1,0 +1,167 @@
+{
+  "donors": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "organ_type": "Kidney",
+      "hospital_id": 37
+    },
+    {
+      "id": 2,
+      "user_id": 11,
+      "organ_type": "kidney",
+      "hospital_id": 37
+    },
+    {
+      "id": 4,
+      "user_id": 13,
+      "organ_type": "liver",
+      "hospital_id": 37
+    },
+    {
+      "id": 5,
+      "user_id": 15,
+      "organ_type": "kidney",
+      "hospital_id": 37
+    },
+    {
+      "id": 12,
+      "user_id": 21,
+      "organ_type": "lung",
+      "hospital_id": 47
+    },
+    {
+      "id": 13,
+      "user_id": 34,
+      "organ_type": "liver",
+      "hospital_id": 40
+    },
+    {
+      "id": 14,
+      "user_id": 1,
+      "organ_type": "lung",
+      "hospital_id": 38
+    },
+    {
+      "id": 15,
+      "user_id": 13,
+      "organ_type": "kidney",
+      "hospital_id": 38
+    },
+    {
+      "id": 16,
+      "user_id": 35,
+      "organ_type": "lung",
+      "hospital_id": 40
+    },
+    {
+      "id": 17,
+      "user_id": 48,
+      "organ_type": "lung",
+      "hospital_id": 40
+    }
+  ],
+  "hospitals": [
+    {
+      "id": 1,
+      "hospital_name": "Apollo"
+    },
+    {
+      "id": 2,
+      "hospital_name": "Apollo Hospital"
+    },
+    {
+      "id": 3,
+      "hospital_name": "Max Healthcare"
+    },
+    {
+      "id": 4,
+      "hospital_name": "Fortis Healthcare"
+    },
+    {
+      "id": 5,
+      "hospital_name": "Lilavati Hospital"
+    },
+    {
+      "id": 6,
+      "hospital_name": "AIIMS Delhi"
+    },
+    {
+      "id": 7,
+      "hospital_name": "Manipal Hospital"
+    },
+    {
+      "id": 8,
+      "hospital_name": "Kokilaben Hospital"
+    },
+    {
+      "id": 9,
+      "hospital_name": "Sir Ganga Ram Hospital"
+    },
+    {
+      "id": 10,
+      "hospital_name": "Jehangir Hospital"
+    },
+    {
+      "id": 11,
+      "hospital_name": "Narayana Health"
+    }
+  ],
+  "users": [
+    {
+      "id": 37,
+      "username": "Apollo",
+      "role": "hospital"
+    },
+    {
+      "id": 38,
+      "username": "Apollo Hospital",
+      "role": "hospital"
+    },
+    {
+      "id": 39,
+      "username": "Max Healthcare",
+      "role": "hospital"
+    },
+    {
+      "id": 40,
+      "username": "Fortis Healthcare",
+      "role": "hospital"
+    },
+    {
+      "id": 41,
+      "username": "Lilavati Hospital",
+      "role": "hospital"
+    },
+    {
+      "id": 42,
+      "username": "AIIMS Delhi",
+      "role": "hospital"
+    },
+    {
+      "id": 43,
+      "username": "Manipal Hospital",
+      "role": "hospital"
+    },
+    {
+      "id": 44,
+      "username": "Kokilaben Hospital",
+      "role": "hospital"
+    },
+    {
+      "id": 45,
+      "username": "Sir Ganga Ram Hospital",
+      "role": "hospital"
+    },
+    {
+      "id": 46,
+      "username": "Jehangir Hospital",
+      "role": "hospital"
+    },
+    {
+      "id": 47,
+      "username": "Narayana Health",
+      "role": "hospital"
+    }
+  ]
+}
